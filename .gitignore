@@ -40,6 +40,5 @@ data/*.mat
 output/
 outputs/
 results/processed/
-results/figures/
 reports/figures/
 *.log

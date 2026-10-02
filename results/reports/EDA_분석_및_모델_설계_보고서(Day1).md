@@ -32,7 +32,7 @@ Cycle 1의 모든 측정값이 0인 셀은 46개이며 모두 `2017-05-12` 배�
 
 ## 3. Q1 Cycle Life 분포는 어떻게 생겼는가
 
-![전체 셀의 Cycle Life 분포](figures/cycle_life_distribution.png)
+![전체 셀의 Cycle Life 분포](../figures/cycle_life_distribution.png)
 
 먼저 예측 대상인 `cycle_life`가 어느 범위에 분포하는지 확인했다. 수명이 특정 구간에 몰려 있는지, 단수명과 장수명 셀의 비율은 어떤지, 다른 셀과 유난히 다른 셀이 있는지를 알아야 이후 분석과 모델 평가 방법을 정할 수 있기 때문이다.
 
@@ -53,7 +53,7 @@ Cycle 1의 모든 측정값이 0인 셀은 46개이며 모두 `2017-05-12` 배�
 
 ### 3.2 배치별 차이
 
-![배치별 Cycle Life 분포](figures/cycle_life_by_batch.png)
+![배치별 Cycle Life 분포](../figures/cycle_life_by_batch.png)
 
 상자그림의 가운데 선은 각 배치의 중앙값을, 점은 개별 셀의 수명을 나타낸다. `2018-02-20`의 점들은 주로 낮은 수명 구간에 모여 있고, `2018-04-12`는 더 높은 구간까지 넓게 분포한다. 전체 히스토그램만으로는 보이지 않았던 배치 간 차이를 확인할 수 있다.
 
@@ -91,7 +91,7 @@ IQR은 같은 배치 안에서 대부분의 셀이 모여 있는 범위를 구�
 
 ## 4. Q2 방전 용량은 어떻게 감소하는가
 
-![수명 그룹별 대표 셀의 QDischarge 열화](figures/qdischarge_degradation.png)
+![수명 그룹별 대표 셀의 QDischarge 열화](../figures/qdischarge_degradation.png)
 
 Q1에서는 셀마다 최종 수명이 크게 다르다는 사실을 확인했다. 다음으로 단수명 셀과 장수명 셀이 실제 사용 과정에서도 서로 다른 방식으로 열화되는지 살펴봤다. 이를 위해 cycle이 증가할 때 방전 가능한 용량인 `QDischarge`가 언제부터, 얼마나 빠르게 감소하는지 비교했다.
 
@@ -109,7 +109,7 @@ Q1에서는 셀마다 최종 수명이 크게 다르다는 사실을 확인했�
 
 Knee point를 찾기 위해 작은 측정 흔들림이 결과에 지나치게 영향을 주지 않도록 곡선을 부드럽게 정리했다. 그다음 완만하게 감소하던 방전 용량이 급격히 떨어지기 시작하는 지점을 찾았다. 이 전환점을 knee point라고 한다.
 
-![수명 그룹별 대표 셀의 knee point](figures/knee_point_examples.png)
+![수명 그룹별 대표 셀의 knee point](../figures/knee_point_examples.png)
 
 각 곡선의 세로 점선이 계산된 knee point다. 단수명 셀은 약 300~400 cycles, 중수명 셀은 약 500~700 cycles, 장수명 셀은 약 800~900 cycles 부근에서 급격한 하강이 시작되는 모습을 볼 수 있다. 셀마다 정확한 위치는 다르지만, 수명이 긴 셀일수록 전환점이 뒤로 이동하는 흐름이 나타난다.
 
@@ -137,7 +137,7 @@ Knee point를 찾기 위해 작은 측정 흔들림이 결과에 지나치게 �
 
 ## 5. Q3 ΔQ(V)에서 초기 차이가 보이는가
 
-![단수명과 장수명 대표 셀의 ΔQ(V)](figures/delta_q_curves.png)
+![단수명과 장수명 대표 셀의 ΔQ(V)](../figures/delta_q_curves.png)
 
 Q2의 전체 열화곡선은 단수명과 장수명 셀의 차이를 보여 주지만, 배터리를 거의 끝까지 사용해야 확인할 수 있다는 한계가 있다. 따라서 cycle 10과 100처럼 비교적 초기의 두 시점만으로 장기 수명 차이를 발견할 수 있는지 확인했다.
 
@@ -202,7 +202,7 @@ Q2의 전체 열화곡선은 단수명과 장수명 셀의 차이를 보여 주�
 
 ### 6.2 고속 충전 셀이 정말 짧은가
 
-![C-rate와 Cycle Life의 관계](figures/c_rate_cycle_life.png)
+![C-rate와 Cycle Life의 관계](../figures/c_rate_cycle_life.png)
 
 왼쪽은 첫 번째 충전 단계의 C-rate, 오른쪽은 충전 과정에서 사용된 최대 C-rate와 수명의 관계다. 같은 C-rate에서도 수명이 넓게 퍼져 있고, 점의 색과 모양으로 구분한 배치에 따라 위치가 달라진다. 따라서 충전 속도가 높을수록 수명이 일정하게 감소하는 단순한 관계는 확인되지 않는다.
 
@@ -230,7 +230,7 @@ C-rate 하나만으로는 실제 충전 전류 패턴 전체를 설명하기 어
 
 ### 7.1 수명과의 상관 순위
 
-![초기 feature와 Cycle Life의 상관계수](figures/feature_target_correlations.png)
+![초기 feature와 Cycle Life의 상관계수](../figures/feature_target_correlations.png)
 
 막대가 오른쪽으로 길수록 해당 feature가 커질 때 수명도 길어지는 경향이 있고, 왼쪽으로 길수록 feature가 커질 때 수명이 짧아지는 경향이 있다. 절대 길이가 긴 feature일수록 수명과의 선형 관계가 강하다. ΔQ 관련 feature가 가장 긴 막대를 보여 초기 수명 예측의 우선 후보가 되었고, C-rate와 일부 기울기 feature는 상대적으로 관계가 약했다.
 

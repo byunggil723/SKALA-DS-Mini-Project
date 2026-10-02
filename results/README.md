@@ -131,7 +131,7 @@ Batch 3 전체 labeled 셀과 논문 기준 품질 제외 후 결과도 보조�
 
 ## EDA 그림과 보고서
 
-`figures/`에는 cycle life 분포, Batch별 비교, 방전 용량 열화, ΔQ(V), knee point, C-rate, 피처 상관관계 그림이 저장된다. 노트북에서 `SAVE_FIGURES = True`로 설정하면 다시 생성할 수 있어 Git에서는 제외한다.
+`figures/`에는 cycle life 분포, Batch별 비교, 방전 용량 열화, ΔQ(V), knee point, C-rate, 피처 상관관계 그림이 저장된다. 노트북에서 `SAVE_FIGURES = True`로 다시 생성할 수 있으며, README와 보고서에서 표시할 수 있도록 Git에 포함한다.
 
 `reports/`에는 EDA 결과를 정리한 Markdown 보고서와 프로젝트 설계/발표 PDF가 있다. 이 파일은 분석 결과의 문서화 산출물이므로 Git에 포함한다.
 
