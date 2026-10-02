@@ -1,0 +1,47 @@
+cell_key,policy_readable,split
+2017-05-12_cell_4,4C(80%)-4C,Development train
+2017-05-12_cell_5,4C(80%)-4C,Development train
+2017-05-12_cell_6,4.4C(80%)-4.4C,Development train
+2017-05-12_cell_7,4.8C(80%)-4.8C,Development train
+2017-05-12_cell_8,4.8C(80%)-4.8C,Development train
+2017-05-12_cell_9,5.4C(40%)-3.6C,Development train
+2017-05-12_cell_10,5.4C(40%)-3.6C,Development train
+2017-05-12_cell_11,5.4C(50%)-3C,Development train
+2017-05-12_cell_12,5.4C(50%)-3C,Development train
+2017-05-12_cell_13,5.4C(50%)-3.6C,Development train
+2017-05-12_cell_14,5.4C(50%)-3.6C,Development train
+2017-05-12_cell_17,5.4C(60%)-3.6C,Development train
+2017-05-12_cell_18,5.4C(60%)-3.6C,Development train
+2017-05-12_cell_21,5.4C(80%)-5.4C,Development train
+2017-05-12_cell_22,5.4C(80%)-5.4C,Development train
+2017-05-12_cell_23,6C(30%)-3.6C,Development train
+2017-05-12_cell_24,6C(30%)-3.6C,Development train
+2017-05-12_cell_25,6C(40%)-3C,Development train
+2017-05-12_cell_26,6C(40%)-3C,Development train
+2017-05-12_cell_31,6C(50%)-3.6C,Development train
+2017-05-12_cell_32,6C(50%)-3.6C,Development train
+2017-05-12_cell_33,6C(60%)-3C,Development train
+2017-05-12_cell_34,6C(60%)-3C,Development train
+2017-05-12_cell_37,7C(40%)-3C,Development train
+2017-05-12_cell_38,7C(40%)-3C,Development train
+2017-05-12_cell_39,7C(40%)-3.6C,Development train
+2017-05-12_cell_40,7C(40%)-3.6C,Development train
+2017-05-12_cell_41,8C(15%)-3.6C,Development train
+2017-05-12_cell_42,8C(15%)-3.6C,Development train
+2017-05-12_cell_43,8C(25%)-3.6C,Development train
+2017-05-12_cell_44,8C(25%)-3.6C,Development train
+2017-05-12_cell_45,8C(35%)-3.6C,Development train
+2017-05-12_cell_46,8C(35%)-3.6C,Development train
+2017-05-12_cell_1,3.6C(80%)-3.6C,Batch 1 hold-out
+2017-05-12_cell_2,3.6C(80%)-3.6C,Batch 1 hold-out
+2017-05-12_cell_3,3.6C(80%)-3.6C,Batch 1 hold-out
+2017-05-12_cell_15,5.4C(60%)-3C,Batch 1 hold-out
+2017-05-12_cell_16,5.4C(60%)-3C,Batch 1 hold-out
+2017-05-12_cell_19,5.4C(70%)-3C,Batch 1 hold-out
+2017-05-12_cell_20,5.4C(70%)-3C,Batch 1 hold-out
+2017-05-12_cell_27,6C(40%)-3.6C,Batch 1 hold-out
+2017-05-12_cell_28,6C(40%)-3.6C,Batch 1 hold-out
+2017-05-12_cell_29,6C(50%)-3C,Batch 1 hold-out
+2017-05-12_cell_30,6C(50%)-3C,Batch 1 hold-out
+2017-05-12_cell_35,7C(30%)-3.6C,Batch 1 hold-out
+2017-05-12_cell_36,7C(30%)-3.6C,Batch 1 hold-out

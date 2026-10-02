@@ -1,0 +1,7 @@
+index,mape_percent,note
+Train (Batch 1 CV),7.617270488696255,Development partition; protocol-grouped nested CV mean
+Valid (Batch 1 Hold-out),7.96483003214157,Unseen charging protocols; model fit on development partition
+Test (Batch 2),37.46199006192346,External batch; selected model refit on all Batch 1
+Gap (Train-Valid),0.3475595434453158,(+) indicates possible overfitting
+Gap (Valid-Test),29.497160029781888,(+) indicates batch generalization degradation
+Gap (Target-Test),28.361990061923457,Paper target: 9.1% MAPE

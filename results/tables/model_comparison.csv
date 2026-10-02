@@ -1,0 +1,23 @@
+model,target_transform,feature_set,cv_mape_percent,cv_std_percent,holdout_mape_percent,simplicity_rank,fold_mapes,best_params
+ElasticNet,log,base_initial_q,7.889750129119064,4.482172980091102,7.773628394481732,3,"[3.255832, 5.852098, 8.736612, 13.714459]","{""regressor__model__alpha"": 0.01, ""regressor__model__l1_ratio"": 0.9}"
+ElasticNet,log,base_mean_q,8.987492021721149,3.6623962748133185,9.215900836466595,3,"[6.140121, 6.620108, 9.052176, 14.137563]","{""regressor__model__alpha"": 0.01, ""regressor__model__l1_ratio"": 0.9}"
+Ridge,raw,base_initial_q,9.406977629923723,5.77748830949125,11.113515232795875,2,"[4.313768, 5.53696, 10.802286, 16.974897]","{""model__alpha"": 10.0}"
+Ridge,raw,base_mean_q,9.432751485146442,5.939624536978374,10.653154689976178,2,"[4.342671, 5.279394, 10.895551, 17.21339]","{""model__alpha"": 10.0}"
+Ridge,log,base_initial_q,9.686935375514938,3.543653691090697,12.369431975502533,2,"[5.532929, 8.500525, 10.81619, 13.898098]","{""regressor__model__alpha"": 10.0}"
+Ridge,log,base_mean_q,10.121452853224152,3.6473979214480865,12.74553641741927,2,"[5.60784, 9.596442, 10.828537, 14.452992]","{""regressor__model__alpha"": 10.0}"
+ElasticNet,raw,base_mean_q,10.140794694764523,5.270546424263007,9.930724595277743,3,"[6.180398, 6.013124, 11.192743, 17.176914]","{""model__alpha"": 1.0, ""model__l1_ratio"": 0.5}"
+ElasticNet,raw,base_initial_q,10.304371220293683,4.965465767398217,10.422383518381686,3,"[6.105658, 6.953725, 11.196766, 16.961335]","{""model__alpha"": 1.0, ""model__l1_ratio"": 0.5}"
+Linear,log,base_initial_q,10.329717480129755,2.459924933300689,9.375530009812334,1,"[8.402584, 9.955605, 9.066627, 13.894054]",{}
+Linear,log,base_mean_q,10.910095058910592,2.6376473885940896,10.386968414645027,1,"[8.217425, 11.081433, 9.888968, 14.452555]",{}
+RandomForest,log,base_initial_q,11.778005047856116,1.964974981306032,12.088725274946716,5,"[8.989982, 12.092905, 12.443175, 13.585958]","{""regressor__model__max_depth"": 4, ""regressor__model__max_features"": 1.0, ""regressor__model__min_samples_leaf"": 4}"
+RandomForest,log,base_mean_q,12.216129538834672,1.1389184251133442,12.155360079060086,5,"[10.733422, 12.099218, 12.568767, 13.463111]","{""regressor__model__max_depth"": null, ""regressor__model__max_features"": 1.0, ""regressor__model__min_samples_leaf"": 4}"
+RandomForest,raw,base_initial_q,12.427208370735052,2.0593494294530648,12.001659412087776,5,"[10.104896, 12.119601, 12.367984, 15.116353]","{""model__max_depth"": 4, ""model__max_features"": 1.0, ""model__min_samples_leaf"": 4}"
+RandomForest,raw,base_mean_q,12.565495475332641,1.6101606831861748,9.592705206127071,5,"[10.87131, 12.136277, 12.516131, 14.738264]","{""model__max_depth"": 2, ""model__max_features"": 1.0, ""model__min_samples_leaf"": 2}"
+HistGradientBoosting,log,base_mean_q,13.779845483156011,1.7294858286139247,11.647480356055407,4,"[11.281326, 14.478624, 14.121622, 15.23781]","{""regressor__model__l2_regularization"": 0.0, ""regressor__model__learning_rate"": 0.1, ""regressor__model__max_leaf_nodes"": 5, ""regressor__model__min_samples_leaf"": 5}"
+HistGradientBoosting,log,base_initial_q,13.780980077961189,2.1016645269018723,12.516910755717356,4,"[10.790937, 14.863474, 13.922518, 15.546992]","{""regressor__model__l2_regularization"": 1.0, ""regressor__model__learning_rate"": 0.03, ""regressor__model__max_leaf_nodes"": 5, ""regressor__model__min_samples_leaf"": 10}"
+Linear,raw,base_initial_q,13.984027330411205,2.9941851150742482,9.42314507592643,1,"[13.756608, 15.253501, 9.949511, 16.97649]",{}
+Linear,raw,base_mean_q,14.644042700091529,3.4143059167022147,9.730341704744019,1,"[12.995723, 17.719105, 10.630543, 17.230799]",{}
+HistGradientBoosting,raw,base_mean_q,14.924636476962615,1.7335807113108137,12.10385969834972,4,"[13.917545, 13.839931, 14.447826, 17.493243]","{""model__l2_regularization"": 0.0, ""model__learning_rate"": 0.1, ""model__max_leaf_nodes"": 5, ""model__min_samples_leaf"": 5}"
+HistGradientBoosting,raw,base_initial_q,15.148262701082489,1.9141487937617216,12.7913169831436,4,"[13.178427, 15.652071, 14.180805, 17.581747]","{""model__l2_regularization"": 1.0, ""model__learning_rate"": 0.03, ""model__max_leaf_nodes"": 5, ""model__min_samples_leaf"": 10}"
+Dummy,raw,base_initial_q,22.039120300901363,5.4654842349415285,14.203162071242515,0,"[22.997525, 28.569022, 21.296553, 15.293382]",{}
+Dummy,raw,base_mean_q,22.039120300901363,5.4654842349415285,14.203162071242515,0,"[22.997525, 28.569022, 21.296553, 15.293382]",{}

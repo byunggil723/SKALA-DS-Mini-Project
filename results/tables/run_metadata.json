@@ -1,0 +1,40 @@
+{
+  "random_state": 42,
+  "selected_model": "ElasticNet",
+  "selected_target_transform": "log",
+  "selected_feature_set": "dq_std_substitution",
+  "selected_features": [
+    "dq_std",
+    "dq_kurtosis",
+    "initial_QDischarge",
+    "IR_mean_100",
+    "temperature_slope_100",
+    "chargetime_mean_100",
+    "max_c_rate"
+  ],
+  "selection_rule": "Lowest Batch 1 nested group-CV mean MAPE; CV dispersion and model simplicity are tie-breakers. Feature set is then selected by the same nested group-CV criterion.",
+  "holdout_used_for_selection": false,
+  "batch2_used_for_selection": false,
+  "final_best_params": {
+    "regressor__model__alpha": 0.01,
+    "regressor__model__l1_ratio": 0.9
+  },
+  "sample_counts": {
+    "batch1": 46,
+    "development": 33,
+    "holdout": 13,
+    "batch2": 39,
+    "batch3_labeled": 44,
+    "batch3_paper_screened": 40
+  },
+  "batch3_paper_excluded_one_based_cell_numbers": [
+    3,
+    24,
+    33,
+    38,
+    43,
+    44
+  ],
+  "protocol_overlap_development_holdout": [],
+  "paper_target_mape_percent": 9.1
+}
